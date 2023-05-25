@@ -91,6 +91,11 @@ function ReadCard() {
     navigate("/createcard");
   };
 
+  //link to create card page
+  const handleButtonBack = () => {
+    navigate("/dashboard");
+  };
+
   //Handler page change functions
   const handlerPrevPage = () => {
     if (page > 1) {
@@ -203,13 +208,25 @@ function ReadCard() {
           )}
         </div>
 
-        {/* submit button */}
-        <input
-          type="submit"
-          value="Create new card"
-          className="r-btn-create"
-          onClick={handleButton}
-        ></input>
+        <div className="r-card-buttons">
+          {/* submit button */}
+          <input
+            type="submit"
+            value="Create new card"
+            className="r-btn-create"
+            onClick={handleButton}
+          ></input>
+
+          {/* back button */}
+          <input
+            type="submit"
+            value="Back"
+            className="r-btn-create"
+            onClick={handleButtonBack}
+          ></input>
+        </div>
+
+        <div className="r-whitespace"></div>
 
         {/* page */}
         {totalPages > 1 && (

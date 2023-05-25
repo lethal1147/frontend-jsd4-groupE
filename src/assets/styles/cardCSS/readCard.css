@@ -39,9 +39,14 @@
     margin-bottom: 15px;
 }
 
+.r-card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
 .r-btn-create {
     position: relative;
-    top: -1.5rem;
     font-family: 'Sono', sans-serif;
     font-weight: 600;
     font-size: x-large;
@@ -51,9 +56,16 @@
     border: #FF7B54;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 auto;
     display: flex;
+    transition: background-color 0.3s;
+}
 
+.r-btn-create:hover {
+    background-color: #d34c23;
+}
+
+.r-whitespace {
+    padding: 25px;
 }
 
 .r-page {
