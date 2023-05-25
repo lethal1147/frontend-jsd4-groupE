@@ -1,0 +1,360 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 12rem;
+    background-color: white;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 50%;
+    padding: 0 5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.hero-text-container h1 {
+    font-size: 4rem;
+}
+
+.hero-text-container p {
+    text-align: start;
+    font-size: 1.1rem;
+    /* line-height: 1.5rem; */
+}
+
+.hero-btn {
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #FF7B54;
+}
+
+.hero-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-btn:hover, 
+.hero-btn:active {
+    background-color: #ff5522;
+    transition: all linear 0.15s 0.05s;
+    cursor: pointer;
+} 
+
+.hero-image-container {
+    width: 30%;
+}
+
+/* features section */
+
+.feature-section {
+    color: black;
+    /* background-color: #FF7B54; */
+}
+
+.home-section-header {
+    color: #fff;
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.feature-card-container {
+    padding: 0 10rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    display: grid;
+    /* flex-direction: column; */
+}
+
+.feature-card:hover {
+    transform: translate(10px, -10px);
+    transition: all ease-out 0.5s;
+}
+
+.feature-card h3, p {
+    margin-bottom: 1rem;
+}
+
+.home-card-header {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.feature-card p {
+    font-weight: 500;
+    text-align: start;
+}
+
+.home-feature-card-image {
+    border-radius: 9999px;
+    border: 1px solid black;
+    width: 65%;
+    margin: 1rem 0;
+    justify-self: center;
+}
+
+/* bmi-section */
+
+.bmi-section {
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 10rem;
+    padding: 6rem 12rem 3rem;
+}
+
+.bmi-form-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #FF7B54;
+    padding: 2rem;
+    width: 80%;
+    height: 100%;
+    color: white;
+    border-radius: 25px;
+}
+
+.bmi-form h3 {
+    font-size: 2rem;
+}
+
+.bmi-form input {
+    padding: 0.75rem;
+    width: 60%;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+
+.bmi-form input:focus {
+    outline: 4px solid #ff5522;
+}
+
+.bmi-form span {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.bmi-form button {
+    padding: 0.75rem;
+    width: 60%;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #FF7B54;
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1.25rem;
+}
+
+.bmi-form button:hover,
+.bmi-form button:active {
+    background-color: #ff5522;
+    cursor: pointer;
+    transition: all linear 0.15s;
+}
+
+.bmi-image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/* how-it-work section */
+
+.how-section {
+    padding: 3rem 6rem;
+    color: black;
+}
+
+.how-section h2 {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+}
+
+.how-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding: 0 10rem 3rem;
+}
+
+.how-card {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    display: grid;
+}
+
+.how-card:hover {
+    transform: translate(10px, -10px);
+    transition: all ease-out 0.5s;
+}
+
+.how-card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.how-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+.home-how-card-image {
+    width: 75%;
+    margin-bottom: 2rem;
+    justify-self: center;
+}
+
+.home-meet-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-meet-card {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000000; */
+    background-color: #fff;
+    width: 100%;
+}
+
+.home-meet-img-container {
+    /* width: 40%; */
+    padding: 3rem;
+}
+
+.home-meet-img {
+    /* width: 100%; */
+    width: 400px;
+    height: 400px;
+    border-radius: 9999px;
+    border: 2px solid #000000;
+}
+
+.home-meet-card-text  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+    /* padding: 5rem; */
+}
+
+.home-meet-card-text > h3 {
+    font-size: 4rem;
+}
+
+.home-meet-position {
+    font-size: 2rem;
+    color: hsla(24, 100%, 50%, 0.8);
+}
+
+.home-meet-card-text > h5 {
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .hero-section {
+        padding: 6rem 3rem;
+    }
+
+    .hero-text-container {
+        width: 60%;
+        padding: 0;
+    }
+
+    .hero-text-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text-container p {
+        font-size: 1.5rem;
+    }
+
+    .hero-image-container {
+        width: 40%;
+    }
+
+    .feature-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 6rem 3rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card p {
+        font-size: 1.5rem;
+    }
+
+    .bmi-section {
+        padding: 4rem 4rem;
+        gap: 3rem;
+    }
+
+    .bmi-form {
+        padding: 0;
+    }
+
+    .bmi-form-container {
+        width: 50%;
+    }
+
+    .how-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 5rem 3rem;
+    }
+
+    .how-card h3 {
+        font-size: 1.75rem;
+    }
+
+    .how-card img {
+        width: 50%;
+    }
+
+    .how-card p {
+        padding: 0 1rem;
+        font-size: 1.25rem;
+    }
+}

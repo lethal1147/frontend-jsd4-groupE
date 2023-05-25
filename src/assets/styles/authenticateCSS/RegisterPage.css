@@ -1,0 +1,38 @@
+.fullpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem 2rem;
+}
+
+.left-form {
+  margin-right: 20px;
+}
+
+.right {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30%;
+}
+
+.register-cats {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .fullpage {
+    flex-flow: column;
+    padding: 2rem;
+  }
+
+  .right {
+    width: 50%;
+    margin: 10px;
+  }
+
+  .register-cats {
+    display: none;
+  }
+}

@@ -1,0 +1,46 @@
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements-text {
+    color: black;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.achievements-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.achievement-image img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.achievement-count {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .achievements-image {
+        padding: 0;
+    }
+}

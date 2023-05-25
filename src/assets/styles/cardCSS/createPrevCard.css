@@ -1,0 +1,216 @@
+.prevcard {
+  border: 0.5px solid rgb(204, 204, 204);
+  background-color: #ffff;
+  border-radius: 20px;
+  width: 740px;
+  height: 169px;
+  margin: 0 auto;
+  margin-top: 25px;
+  position: relative;
+}
+
+.container-text {
+  height: 110px;
+  width: 63.6%;
+  position: absolute;
+  left: 34.7%;
+  top: 13px;
+}
+
+.prevTextbox {
+  height: 23px;
+  width: 85%;
+  overflow-y: scroll;
+  position: absolute;
+}
+
+.prevTextbox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prevTextbox::-webkit-scrollbar-thumb {
+  background-color: #ff7b54;
+  border-radius: 12px;
+}
+
+.faPenToSquare {
+  width: 15px;
+  height: 15px;
+  color: #ff7b54;
+  position: absolute;
+  top: 0;
+  right: 7.5%;
+}
+
+.faTrashCan {
+  width: 15px;
+  height: 15px;
+  color: #ff7b54;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.prevCaption {
+  margin-top: 33px;
+  height: 50px;
+  width: 98%;
+  right: 0;
+  position: absolute;
+  overflow-y: scroll;
+}
+
+.prevCaption::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prevCaption::-webkit-scrollbar-thumb {
+  background-color: #ff7b54;
+  border-radius: 12px;
+}
+
+.prevDate {
+  height: 18px;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+.prevDuration {
+  height: 18px;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.faCalendar {
+  width: 20px;
+  height: 20px;
+  color: #7c7c7c;
+  position: absolute;
+  bottom: -3px;
+  left: 13%;
+}
+
+.title-text {
+  color: #525252;
+  font-size: 22px;
+  position: absolute;
+  top: -3px;
+  text-align: center;
+  width: 100%;
+  font-weight: 450;
+  letter-spacing: -2px;
+}
+
+.caption-text {
+  color: #525252;
+  position: absolute;
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+}
+
+.date-text {
+  color: #7c7c7c;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.duration-text {
+  color: #7c7c7c;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  text-align: end;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -7px;
+  left: 15px;
+}
+
+.icon-img-swimming {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: -9px;
+  left: 10px;
+}
+
+.icon-upload {
+  position: absolute;
+  left: 38%;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.prevImg {
+  background-size: cover;
+  width: 231px;
+  height: 109px;
+  border-radius: 10%;
+}
+
+.previewStatus {
+  background-color: rgb(204, 204, 204);
+  width: 100%;
+  height: 20%;
+  border-radius: 0 0 19px 19px;
+  position: relative;
+  top: 20%;
+}
+
+#responsive-duration-text {
+  display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .prevcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 0 19px 19px;
+  }
+
+  .container-text {
+    display: none;
+  }
+
+  .prevDuration {
+    position: initial;
+  }
+
+  .duration-text {
+    text-align: center;
+    bottom: -20px;
+  }
+
+  .icon-img {
+    display: none;
+  }
+
+  #responsive-duration-text {
+    display: initial;
+  }
+}

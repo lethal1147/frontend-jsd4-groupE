@@ -1,0 +1,79 @@
+.bg-readcard {
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    position: relative;
+}
+
+.r-coverimage {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    border: none;
+    padding-bottom: 15%;
+}
+
+.r-callout {
+    width: 60%;
+    height: 30%;
+    top: 0%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.r-socialmedia {
+    width: 15%;
+    height: 4%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+.r-card {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.r-btn-create {
+    position: relative;
+    top: -1.5rem;
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    padding: 10px 25px;
+    color: white;
+    background-color: #FF7B54;
+    border: #FF7B54;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.r-page {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    margin-right: 5%;
+    gap: 40px;
+    top: 2.5rem;
+}
+
+.r-page span {
+    color: #FF7B54;
+    font-size: xx-large;
+}
+
+.faCircle {
+    width: 30px;
+    height: 30px;
+    color: #FF7B54;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}

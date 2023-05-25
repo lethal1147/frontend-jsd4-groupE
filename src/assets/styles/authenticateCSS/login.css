@@ -1,0 +1,37 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 10rem;
+}
+
+.login-box {
+    margin-right: 20px;
+}
+
+.login-image-container {
+    margin-left: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.login-image {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .login-page {
+        flex-flow: column;
+        padding: 2rem;
+    }
+
+    .login-image {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .login-image {
+        display: none;
+    }
+}

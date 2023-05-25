@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+    .r-coverimage {
+        padding-bottom: 35%;
+    }
+
+    .r-callout {
+        width: 90%;
+    }
+
+    .r-socialmedia {
+        width: 30%;
+    }
+
+    .r-page {
+        justify-content: center;
+        margin: 5% 0 0%;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .r-socialmedia {
+        width: 20%;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .r-prevcard {
+        border-radius: 0 0 19px 19px;
+    }
+
+    .r-container-text {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .r-prevImg {
+        width: 150px;
+        height: 75px;
+        top: 8%;
+        left: 5%;
+    }
+
+    .r-prevTextbox {
+        width: 100%;
+        top: 8%;
+        left: 50%;
+    }
+
+    .r-prevCaption,
+    .r-caption-text {
+        display: none;
+    }
+
+    .r-title-text {
+        text-align: left;
+    }
+
+    .r-faPenToSquare {
+        top: -10%;
+        right: -10%;
+    }
+
+    .r-faTrashCan {
+        top: -10%;
+        right: -20%;
+    }
+
+    .r-faCalendar {
+        bottom: 13%;
+        left: -22%;
+    }
+
+    .r-prevDate {
+        bottom: 18%;
+        left: -9%;
+    }
+
+    .r-prevDuration {
+        bottom: 18%;
+        right: -9%;
+    }
+
+    .r-duration-text {
+        width: 135%;
+    }
+
+    .r-activity,
+    .r-icon-img,
+    .r-icon-img-swimming {
+        left: -30%;
+        bottom: -11px;
+    }
+}

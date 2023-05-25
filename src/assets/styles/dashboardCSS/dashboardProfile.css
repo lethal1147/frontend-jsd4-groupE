@@ -1,0 +1,35 @@
+.dashboard-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-profile img {
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dashboard-profile h3 {
+    font-size: 120%;
+    font-weight: bold;
+    margin-left: 25px;
+    color: black;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .dashboard-profile img {
+        width: 7rem;
+        margin-right: 5%;
+    }
+
+    .dashboard-profile h3 {
+        font-size: 150%;
+    }
+}

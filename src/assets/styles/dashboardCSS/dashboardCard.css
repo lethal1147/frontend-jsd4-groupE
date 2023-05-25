@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sono:wght@300;400;500;700&display=swap');
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.read-card-button {
+    background-color: #ff7f27;
+    color: white;
+    padding: 10px 10%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Sono', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.read-card-button:hover {
+    background-color: #ff6a00;
+}

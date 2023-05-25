@@ -1,0 +1,20 @@
+.socialmedia-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.socialmedia-icon li {
+    list-style: none;
+}
+
+.socialmedia-icon a {
+    color: #757575;
+}
+
+.socialmedia-icon a:hover,
+.socialmedia-icon a:active {
+    color: #FFBDAA;
+    transition: all linear 0.15s 0.05s;
+}

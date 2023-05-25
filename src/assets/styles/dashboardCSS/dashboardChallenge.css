@@ -1,0 +1,74 @@
+.friend-profile-container {
+    height: 16rem;
+    overflow: auto;
+    
+}
+
+.friend-profile-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .friend-profile-container::-webkit-scrollbar-thumb {
+    background-color: #ff7b54;
+    border-radius: 12px;
+  }
+
+.friend-profile {
+    display: flex;
+    align-items: center;
+    margin: 5% auto;
+}
+
+#challenge-text-title {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.friend-profile img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.friend-profile h3 {
+    font-size: 100%;
+    font-weight: bold;
+    margin-left: 25px;
+    color: black;
+    overflow: auto;
+}
+
+.friend-profile h3::-webkit-scrollbar {
+    width: 1px;
+    height: 3px;
+  }
+  
+  .friend-profile h3::-webkit-scrollbar-thumb {
+    background-color: #ff7b54;
+    border-radius: 5px;
+  }
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .friend-profile-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .friend-profile {
+        margin: 2.5% auto;
+    }
+
+    .friend-profile img {
+        width: 7.5rem;
+    }
+
+    .friend-profile h3 {
+        display: none;
+    }
+}

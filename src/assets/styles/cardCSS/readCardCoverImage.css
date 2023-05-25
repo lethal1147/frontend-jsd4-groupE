@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sono:wght@300;400;500;700&display=swap');
+
+.cover-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+}
+
+.btn-changecover {
+    position: absolute;
+    width: 140px;
+    bottom: 5%;
+    right: 5.5%;
+    padding: 5px;
+    font-family: 'Sono', sans-serif;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.cover-container:hover .btn-changecover {
+    display: block;
+}
+
+.btn-changecover:hover {
+    background-color: #FF7B54;
+}
+
+.btn-changecover:hover .click-here {
+    color: #fff;
+}
+
+.cover-input-field {
+    position: absolute;
+    bottom: 0%;
+    right: -0.5%;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.click-here {
+    color: #525252;
+    cursor: pointer;
+}
+
+.cover-img-upload {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-changecover {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

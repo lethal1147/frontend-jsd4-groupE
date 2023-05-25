@@ -1,0 +1,28 @@
+.goals-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goals-text {
+    color: black;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.goal-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1%;
+    background-color: #c0c0c0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.goal-image img {
+    width: 50%;
+    height: auto;
+}

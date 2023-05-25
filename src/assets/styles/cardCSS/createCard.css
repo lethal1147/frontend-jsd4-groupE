@@ -1,0 +1,58 @@
+.create-card-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4rem;
+    margin: 0 auto;
+}
+
+.create-container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    border-radius: 15px 0px 0px 15px;
+    padding-bottom: 50px;
+}
+
+.head-sentence {
+    text-align: center;
+    top: 10px;
+    position: relative;
+}
+
+
+.firsttopic {
+    color: #FF7B54;
+    font-weight: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.secondtopic {
+    color: #525252;
+    font-weight: 700px;
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+.thirdtopic {
+    color: #525252;
+    font-weight: 700px;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1250px) {
+    .create-card-container {
+        padding: 2rem;
+    }
+
+    .create-container {
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .firsttopic {
+        display: none;
+    }
+}

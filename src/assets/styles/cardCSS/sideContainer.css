@@ -1,0 +1,39 @@
+.sideContainer {
+    width: 60%;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+    float: right;
+    background-color: antiquewhite;
+    position: relative;
+    z-index: 0;
+}
+
+.sideIMG {
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sideText {
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 120px;
+    right: -10px;
+    text-align: center;
+}
+
+.orangeText {
+    color: #FF7B54;
+}
+
+.greyText {
+    color: #525252;
+}
+
+@media screen and (max-width: 1250px) {
+    .sideContainer {
+        display: none;
+    }
+}

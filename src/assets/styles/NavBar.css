@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* font-family: "Sono", sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* @viewport{
+    width: 1440px;
+    height: 900px;
+} */
+
+
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+
+    
+}
+:root{
+    --textColor: aliceblue;
+    --orange:  #FF7B54;
+    --oryellow:#FFB26B;
+    --yellow:#FFD56F;
+    --green: #939B62;
+   
+}
+
+
+.nav{
+    background-color: var(--orange);
+    display: flex;
+    text-align: center;
+justify-items: center;
+    justify-content: space-between;
+    color: var(--textColor);
+    align-items: center;
+   padding-right: 0%;
+   margin: 0%;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    height: 7%;
+    z-index: 1;
+}
+.nav a{
+    color: var(--textColor);
+    text-decoration: none;
+   text-align: center;
+   display:flex;
+   justify-content: center;
+   padding-right: 2rem;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
+}
+
+#nav-img{
+    padding-left: 2rem ;
+    padding-right: 1rem ;
+   height: 40px;
+  
+}
+ 
+.site-title{
+    font-size: 2rem;
+    font-weight: 1000;
+    font-family: "Sono", sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.nav-middle{
+   
+    gap: 2rem;
+}
+
+.nav-right{
+    display: flex;
+    gap: 2rem;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
+}
+
+ 
+/* navbar after login */
+.navAfter{
+    background-color: var(--orange);
+    display: flex;
+    text-align: center;
+justify-items: center;
+    justify-content: space-between;
+    color: var(--textColor);
+    align-items: center;
+   padding-right: 0%;
+   margin: 0%;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    height: 7%;
+    z-index: 1;
+}
+
+.navAfter a{
+    color: var(--textColor);
+    text-decoration: none;
+   text-align: center;
+   display:flex;
+   justify-content: center;
+   padding-right: 2rem;
+}
+.navAfter ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
+}
+
+#nav-img{
+    padding-left: 2rem ;
+    padding-right: 1rem ;
+   height: 40px;
+ 
+}
+ 
+.site-title{
+    font-size: 2rem;
+    font-weight: 1000;
+    font-family: "Sono", sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.nav-middle{
+   
+    gap: 2rem;
+}
+
+.nav-right{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+#profilepic{
+ 
+   height: 50px;
+   text-decoration: none;
+   box-sizing: border-box;
+    border-radius: 50%;
+   
+}
+
+#profilepic a{
+    list-style: none;
+    height: 50px;
+    text-decoration: none;
+    box-sizing: border-box;
+     border-radius: 50%;
+     
+ }
+ 
+ .nav-links{
+    position: fixed;
+  display: flex;
+ right: 0%;
+  flex-direction: column;
+}
+.nav-item{
+    display: inline;
+}
+#nav-toggle{
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+   
+    width: auto;
+    margin-right: 2rem;
+    display: block;
+}

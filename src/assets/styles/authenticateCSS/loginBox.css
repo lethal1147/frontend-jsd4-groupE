@@ -1,0 +1,107 @@
+.login-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 4rem 6rem;
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
+.login-fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.login-fields input {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.username-container,
+.password-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.username-input-container,
+.password-input-container {
+  width: 100%;
+  font-family: "Sono", sans-serif;
+  margin-top: 10px;
+}
+
+.login-button {
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  width: 100%;
+  font-family: "Sono", sans-serif;
+}
+
+.login-button:hover {
+  background-color: #0058b5;
+}
+
+.login-footer {
+  font-size: 14px;
+  color: #999;
+}
+
+.login-footer a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 100%;
+  }
+
+  .login-title,
+  .username-container,
+  .password-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .login-container {
+    padding: 5%;
+  }
+}
