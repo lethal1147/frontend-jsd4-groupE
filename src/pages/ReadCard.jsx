@@ -160,6 +160,15 @@ function ReadCard() {
     fetchQuote();
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+
+    return () => {
+      document.body.style.overflowX = 'auto';
+    };
+  }, []);
+
+
 
 
   return (
