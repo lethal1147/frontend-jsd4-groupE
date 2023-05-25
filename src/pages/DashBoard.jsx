@@ -10,9 +10,7 @@ export default function Dashboard() {
 
   return (
     <Layout>
-      <div className="dashboard-page">
-        <DashboardBox className="dashboard-box" />
-      </div>
+      <DashboardBox className="dashboard-box" />
     </Layout>
   );
 }

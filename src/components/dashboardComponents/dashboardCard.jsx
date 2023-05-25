@@ -48,17 +48,15 @@ export default function DashboardCards() {
   return (
     <div className="cards-container">
       {renderActivity.map((ele, index) => (
-        <div key={ele._id || index} onClick={() => handleActivityClick(ele)}>
-          {Object.keys(ele).length === 0 ? (
-            <BlankCard key={`${ele._id || index}-blank`} />
-          ) : (
-            <Card
-              key={`${ele._id || index}-card`}
-              data={ele}
-              fetchActivity={fetchActivity}
-            />
-          )}
-        </div>
+        Object.keys(ele).length === 0 ? (
+          <BlankCard key={`${ele._id || index}-blank`} />
+        ) : (
+          <Card
+            key={`${ele._id || index}-card`}
+            data={ele}
+            fetchActivity={fetchActivity}
+          />
+        )
       ))}
       <div className="button-container">
         <button
