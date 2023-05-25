@@ -7,7 +7,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 12rem;
+    padding: 6rem 2rem;
     background-color: white;
 }
 
@@ -356,5 +356,51 @@ html {
     .how-card p {
         padding: 0 1rem;
         font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    /* Hero */
+
+    .hero-section {
+        padding: 3rem 2rem;
+    }
+
+    .hero-text-container {
+        gap: 1rem
+    }
+
+    .hero-text-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-text-container p {
+        font-size: 1rem;
+    }
+
+    .hero-image-container img {
+        width: 100%;
+    }
+
+    .hero-btn {
+        font-size: 1.25rem;
+    }
+
+    /* Feature */
+
+    .feature-card-container {
+        padding: 0 3rem 2rem;
+    }
+
+    .feature-card {
+        padding: 1rem 1.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
     }
 }
