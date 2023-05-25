@@ -17,8 +17,6 @@ import SocialMedia from "../components/cardComponents/readCardSocialmedia";
 import "../assets/styles/cardCSS/readCard.css";
 import "../assets/styles/cardCSS/readCardResponsive.css";
 
-
-
 function ReadCard() {
   const navigate = useNavigate();
 
@@ -37,8 +35,6 @@ function ReadCard() {
   });
   const [totalPages, setTotalPages] = useState(1);
 
-
-
   const showPicker = () => {
     setPickerVisible(!pickerVisible);
   };
@@ -53,6 +49,7 @@ function ReadCard() {
       const response = await axios.put(`${backend}/quote/update`, data);
     } catch (err) {
       console.error(err);
+      swal("Oops", "Something went wrong!", "error");
     }
   };
 
@@ -81,7 +78,11 @@ function ReadCard() {
           headers: { "Content-Type": "multipart/form-data" },
         });
       } catch (err) {
-        console.error(err);
+        if (err.request.status === 500) {
+          swal("Oops", "Invalid file image type!", "error");
+        } else {
+          swal("Oops", "Something went wrong!", "error");
+        }
       }
     }
   };
@@ -151,10 +152,9 @@ function ReadCard() {
       const response = await axios.put(`${backend}/quote/update`, data);
     } catch (err) {
       console.error(err);
+      swal("Oops", "Something went wrong!", "error");
     }
   };
-
-
 
   //for get method : activity data
   useEffect(() => {
@@ -166,15 +166,12 @@ function ReadCard() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowX = "hidden";
 
     return () => {
-      document.body.style.overflowX = 'auto';
+      document.body.style.overflowX = "auto";
     };
   }, []);
-
-
-
 
   return (
     <Layout>

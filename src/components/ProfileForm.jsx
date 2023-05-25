@@ -11,6 +11,7 @@ const ProfileForm = ({
   handleChange,
   handleUpdateProfile,
   handleDeleteProfile,
+  errorImg,
 }) => {
   return (
     <form className="editform">
@@ -62,6 +63,7 @@ const ProfileForm = ({
               Delete Account
             </button>
           </div>
+          {errorImg && <div className="error-message">*{errorImg}*</div>}
         </div>
 
         <div className="boxRightForForm">

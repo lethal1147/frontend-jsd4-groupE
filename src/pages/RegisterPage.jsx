@@ -15,6 +15,7 @@ function FormRegister() {
   const [srcImg, setSrcImg] = useState(null);
   const [isSubmit, setIsSubmit] = useState(false);
   const [error, setError] = useState("");
+  const [errorImg, setErrorImg] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
 
   const [formValues, setFormValues] = useState({
@@ -49,6 +50,7 @@ function FormRegister() {
   const saveInput = async (e) => {
     e.preventDefault();
     const backend = import.meta.env.VITE_BACKEND_URL;
+    setErrorImg("");
     setIsSubmit(true);
     const error = validate(formValues);
     setFormErrors(error);
@@ -77,6 +79,9 @@ function FormRegister() {
         setError(error.response.data.message);
         setIsSubmit(false);
         setIsProcessing(false);
+        if (error.request.status === 500) {
+          setErrorImg("Invalid file image type!");
+        }
         swal("Oops", "Something went wrong!", "error");
       }
     }
@@ -103,6 +108,7 @@ function FormRegister() {
           saveInput={saveInput}
           error={error}
           isProcessing={isProcessing}
+          errorImg={errorImg}
         />
         <div className="register-cats">
           <img src={Cat} alt="Muscular Orange Cat" className="right" />
