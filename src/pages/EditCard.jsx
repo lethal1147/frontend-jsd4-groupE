@@ -13,7 +13,7 @@ import swal from "sweetalert";
 function EditCard() {
   const navigate = useNavigate();
   const { id } = useParams();
-  console.log({ id });
+  // console.log({ id });
 
   const [task, setTask] = useState("");
   const [image, setImage] = useState(null);
@@ -74,7 +74,7 @@ function EditCard() {
     const backend = import.meta.env.VITE_BACKEND_URL;
     try {
       const res = await axios.get(`${backend}/activities/` + id);
-      console.log(res.data);
+      // console.log(res.data);
 
       const taskColor = {
         complete: "#96d674",
