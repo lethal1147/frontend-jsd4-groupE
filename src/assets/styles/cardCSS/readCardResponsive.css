@@ -46,7 +46,8 @@
     }
 
     .r-prevTextbox {
-        width: 100%;
+        overflow-x: hidden;
+        width: 70%;
         top: 8%;
         left: 50%;
     }
@@ -57,6 +58,7 @@
     }
 
     .r-title-text {
+        font-size: 18px;
         text-align: left;
     }
 
@@ -78,6 +80,10 @@
     .r-prevDate {
         bottom: 18%;
         left: -9%;
+    }
+
+    .r-date-text {
+        font-size: 14px;
     }
 
     .r-prevDuration {

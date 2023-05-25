@@ -127,7 +127,7 @@ export default function MainNav() {
           </Link>
         </li>
         <li>
-          <Link className="navbar-link" to="/login">
+          <Link className="navbar-link" to="/register">
             Sign-up
           </Link>
         </li>
