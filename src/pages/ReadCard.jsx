@@ -17,8 +17,6 @@ import SocialMedia from "../components/cardComponents/readCardSocialmedia";
 import "../assets/styles/cardCSS/readCard.css";
 import "../assets/styles/cardCSS/readCardResponsive.css";
 
-
-
 function ReadCard() {
   const navigate = useNavigate();
 
@@ -37,8 +35,6 @@ function ReadCard() {
   });
   const [totalPages, setTotalPages] = useState(1);
 
-
-
   const showPicker = () => {
     setPickerVisible(!pickerVisible);
   };
@@ -53,6 +49,7 @@ function ReadCard() {
       const response = await axios.put(`${backend}/quote/update`, data);
     } catch (err) {
       console.error(err);
+      swal("Oops", "Something went wrong!", "error");
     }
   };
 
@@ -81,7 +78,11 @@ function ReadCard() {
           headers: { "Content-Type": "multipart/form-data" },
         });
       } catch (err) {
-        console.error(err);
+        if (err.request.status === 500) {
+          swal("Oops", "Invalid file image type!", "error");
+        } else {
+          swal("Oops", "Something went wrong!", "error");
+        }
       }
     }
   };
@@ -89,6 +90,11 @@ function ReadCard() {
   //link to create card page
   const handleButton = () => {
     navigate("/createcard");
+  };
+
+  //link to create card page
+  const handleButtonBack = () => {
+    navigate("/dashboard");
   };
 
   //Handler page change functions
@@ -146,10 +152,9 @@ function ReadCard() {
       const response = await axios.put(`${backend}/quote/update`, data);
     } catch (err) {
       console.error(err);
+      swal("Oops", "Something went wrong!", "error");
     }
   };
-
-
 
   //for get method : activity data
   useEffect(() => {
@@ -160,7 +165,13 @@ function ReadCard() {
     fetchQuote();
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflowX = "hidden";
 
+    return () => {
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
 
   return (
     <Layout>
@@ -194,13 +205,25 @@ function ReadCard() {
           )}
         </div>
 
-        {/* submit button */}
-        <input
-          type="submit"
-          value="Create new card"
-          className="r-btn-create"
-          onClick={handleButton}
-        ></input>
+        <div className="r-card-buttons">
+          {/* back button */}
+          <input
+            type="submit"
+            value="Back to Dashboard"
+            className="r-btn-create"
+            onClick={handleButtonBack}
+          ></input>
+
+          {/* submit button */}
+          <input
+            type="submit"
+            value="Create new card"
+            className="r-btn-create"
+            onClick={handleButton}
+          ></input>
+        </div>
+
+        <div className="r-whitespace"></div>
 
         {/* page */}
         {totalPages > 1 && (

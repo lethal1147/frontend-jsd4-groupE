@@ -11,6 +11,7 @@ const RegisterForm = ({
   saveInput,
   error,
   isProcessing,
+  errorImg,
 }) => {
   return (
     <form onSubmit={saveInput} className="form">
@@ -89,7 +90,7 @@ const RegisterForm = ({
             onChange={handleChange}
             value={formValues.weight}
             name="weight"
-            type="text"
+            type="number"
             placeholder="Weight (in kg.)"
           />
           <span className="texterr"> {formErrors.weight}</span>
@@ -102,7 +103,7 @@ const RegisterForm = ({
             onChange={handleChange}
             value={formValues.height}
             name="height"
-            type="text"
+            type="number"
             placeholder="Height (in cm.)"
           />
           <span className="texterr"> {formErrors.height}</span>
@@ -115,7 +116,7 @@ const RegisterForm = ({
             onChange={handleChange}
             value={formValues.email}
             name="email"
-            type="email"
+            type="text"
             placeholder="Email"
           />
           <span className="texterr"> {formErrors.email}</span>
@@ -188,6 +189,7 @@ const RegisterForm = ({
         </div>
       ) : null}
       {error && <div className="error-message">*{error}*</div>}
+      {errorImg && <div className="error-message">*{errorImg}*</div>}
     </form>
   );
 };

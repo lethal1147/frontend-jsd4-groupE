@@ -63,16 +63,16 @@ export default function HomePage() {
       return setBmiInput({...bmiInput, bmi: bmiResult, shape: 'strong'})
     }
 
-    const bmiResult = `Your BMI is : ${(weight / (height / 100) ** 2).toFixed(2)}`;
-    const bmiState =
-      bmiResult < 18.5
-        ? "under"
-        : bmiResult >= 18.5 && bmiResult < 25
-          ? "strong"
-          : bmiResult >= 25 
-          ? "over"
-          : "strong"
-  
+    const bmiResult = parseFloat((weight / (height / 100) ** 2).toFixed(2));
+    const bmiState = 
+      bmiResult < 18.5 
+      ? "under" 
+      : bmiResult >= 18.5 && bmiResult < 25 
+      ? "strong" 
+      : bmiResult >= 25 
+      ? "over" 
+      : "strong"
+
     setBmiInput({ ...bmiInput, bmi: bmiResult, shape: bmiState });
   }
 
@@ -164,7 +164,7 @@ export function Homebmi({ bmiInput, onChange, onClick }) {
             name="weight"
             value={bmiInput.weight}
           />
-          <span>{bmiInput.bmi}</span>
+          <span>{typeof bmiInput.bmi === 'number' ? 'Your BMI is : ' : ''}{bmiInput.bmi}</span>
           <button onClick={onClick}>Calculate</button>
         </form>
       </div>
@@ -186,7 +186,7 @@ export function Homebmi({ bmiInput, onChange, onClick }) {
 export function Homehow() {
   return (
     <section id="how" className="how-section">
-      <h2 className="home-section-header">How it Work!</h2>
+      <h2 className="home-section-header">How it Works!</h2>
       <div className="how-card-container">
         {howSectionContent.map((content) => {
           return (
@@ -208,7 +208,7 @@ export function Homehow() {
 
 export function HomeMeetTeam() {
   return (
-    <section>
+    <section className='home-meet-section'>
       <h2 className='home-section-header'>Meet our Team!</h2>
       <div className='home-meet-card-container'>
         <Swiper
@@ -218,8 +218,8 @@ export function HomeMeetTeam() {
             hide: true
           }}
           autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
+            // delay: 3500,
+            // disableOnInteraction: false,
           }}
           loop={true}
         >

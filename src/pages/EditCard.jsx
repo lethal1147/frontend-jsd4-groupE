@@ -13,7 +13,6 @@ import swal from "sweetalert";
 function EditCard() {
   const navigate = useNavigate();
   const { id } = useParams();
-  console.log({ id });
 
   const [task, setTask] = useState("");
   const [image, setImage] = useState(null);
@@ -74,8 +73,6 @@ function EditCard() {
     const backend = import.meta.env.VITE_BACKEND_URL;
     try {
       const res = await axios.get(`${backend}/activities/` + id);
-      console.log(res.data);
-
       const taskColor = {
         complete: "#96d674",
         inProgress: "#fff476",
@@ -130,12 +127,22 @@ function EditCard() {
       navigate("/readcard");
     } catch (error) {
       console.log(error);
+      setIsProcessing(false);
+      if (error.request.status === 500) {
+        swal("Oops", "Invalid file image type!", "error");
+      } else {
+        swal("Oops", "Something went wrong!", "error");
+      }
     }
   };
 
   const handleCancel = async (e) => {
     navigate("/readcard");
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Layout>

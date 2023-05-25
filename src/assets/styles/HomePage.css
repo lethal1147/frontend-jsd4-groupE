@@ -7,7 +7,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 12rem;
+    padding: 6rem 2rem;
     background-color: white;
 }
 
@@ -258,12 +258,14 @@ html {
 .home-meet-img-container {
     /* width: 40%; */
     padding: 3rem;
+    width: 400px;
+    height: 400px;
 }
 
 .home-meet-img {
-    /* width: 100%; */
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+
     border-radius: 9999px;
     border: 2px solid #000000;
 }
@@ -285,6 +287,7 @@ html {
 .home-meet-position {
     font-size: 2rem;
     color: hsla(24, 100%, 50%, 0.8);
+    text-align: center;
 }
 
 .home-meet-card-text > h5 {
@@ -356,5 +359,226 @@ html {
     .how-card p {
         padding: 0 1rem;
         font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    /* Hero */
+
+    .hero-section {
+        padding: 3rem 2rem;
+    }
+
+    .hero-text-container {
+        gap: 1rem
+    }
+
+    .hero-text-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-text-container p {
+        font-size: 1rem;
+    }
+
+    .hero-image-container img {
+        width: 100%;
+    }
+
+    .hero-btn {
+        font-size: 1.25rem;
+    }
+
+    /* Feature */
+
+    .feature-card-container {
+        padding: 0 3rem 2rem;
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 1rem 1.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+    }
+
+    /* BMI */
+
+    .bmi-section {
+        padding: 2rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .bmi-form-container {
+        width: 60%;
+    }
+
+    .bmi-image-container {
+        width: 40%;
+    }
+
+    .bmi-image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bmi-form {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 1rem;
+        gap: 1rem;
+        top: 0;
+    }
+
+    .bmi-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .bmi-form input {
+        width: 90%;
+    }
+
+    .bmi-form span {
+        font-size: 1.35rem;
+    }
+
+    .bmi-form button {
+        padding: 0.5rem;
+    }
+
+    /* How it works */
+    .how-section {
+        padding: 1rem;
+    }
+
+    /* Meet out team */
+    .home-meet-img-container {
+        padding: 3rem;
+        width: 300px;
+        height: 300px;
+    }
+
+    .home-meet-card-text {
+        padding: 1rem 0;
+    }
+
+    .home-meet-card-text h3 {
+        font-size: 2rem;
+    }
+
+    .home-meet-position {
+        font-size: 1.25rem;
+    }
+
+    .home-meet-card-text h5 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* Hero */
+    .hero-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-text-container {
+        width: 100%;
+    }
+    
+    /* feature */
+    .feature-section {
+        padding: 0 1.5rem
+    }
+
+    .feature-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 0 2rem;
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* BMI */
+
+    .bmi-section {
+        flex-direction: column;
+    }
+
+    .bmi-form-container {
+        width: 100%;
+    }
+
+    .bmi-image-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bmi-image-container img {
+        width: 50%;
+    }
+
+    /* How it works */
+
+    .how-section .home-section-header {
+        padding: 2rem 1rem;
+        font-size: 2rem;
+    }
+
+    .how-card-container {
+        padding: 0 2rem;
+    }
+
+    .how-card {
+        padding: 1rem;
+    }
+
+    .how-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .how-card p {
+        font-size: 1rem;
+    }
+
+    /* Meet our team */
+
+    .home-meet-section .home-section-header {
+        font-size: 2.25rem;
+        padding: 1.5rem;
+    }
+
+    .home-meet-img-container {
+        padding: 1.5rem;
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-meet-card-text {
+        width: 40%;
+    }
+
+    .home-meet-card-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-meet-position {
+        font-size: 1rem;
+    }
+
+    .home-meet-card-text h5 {
+        font-size: 0.75rem;
     }
 }

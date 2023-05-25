@@ -95,4 +95,14 @@
         left: -30%;
         bottom: -11px;
     }
+
+    .r-card-buttons {
+        flex-direction: column;
+        gap: 0%;
+        margin: auto 10%;
+    }
+
+    .r-btn-create {
+        margin-top: 5%;
+    }
 }

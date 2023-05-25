@@ -151,6 +151,9 @@ Main : #FF7B54
         right: 20px
     }
 
+    .nav {
+        display: none !important;
+    }
 
 }
 

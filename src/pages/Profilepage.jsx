@@ -8,8 +8,6 @@ import Layout from "../components/Layout";
 import ProfileForm from "../components/ProfileForm";
 import "../assets/styles/ProfilePage.css";
 
-
-
 const Profile = () => {
   const navigate = useNavigate();
 
@@ -18,8 +16,7 @@ const Profile = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-
-
+  const [errorImg, setErrorImg] = useState("");
 
   const fetchData = async () => {
     const backend = import.meta.env.VITE_BACKEND_URL;
@@ -50,6 +47,7 @@ const Profile = () => {
     e.preventDefault();
     const backend = import.meta.env.VITE_BACKEND_URL;
     setIsSubmit(true);
+    setErrorImg("");
 
     const error = validateProfile(userData);
     setFormErrors(error);
@@ -87,6 +85,9 @@ const Profile = () => {
       } catch (err) {
         console.log(err);
         setIsProcessing(false);
+        if (err.request.status === 500) {
+          setErrorImg("Invalid file image type!");
+        }
         swal("Oops", "Something went wrong!", "error");
       }
     }
@@ -111,6 +112,7 @@ const Profile = () => {
           navigate("/");
         } catch (error) {
           console.log(error);
+          swal("Oops", "Something went wrong!", "error");
         }
       } else {
         swal("Your account is safe!");
@@ -118,13 +120,9 @@ const Profile = () => {
     });
   };
 
-
-
   useEffect(() => {
     fetchData();
   }, []);
-
-
 
   return (
     <Layout>
@@ -137,9 +135,10 @@ const Profile = () => {
         handleChange={handleChange}
         handleUpdateProfile={handleUpdateProfile}
         handleDeleteProfile={handleDeleteProfile}
+        errorImg={errorImg}
       />
     </Layout>
   );
-}
+};
 
 export default Profile;
