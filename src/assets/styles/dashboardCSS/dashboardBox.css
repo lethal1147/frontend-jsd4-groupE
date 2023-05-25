@@ -1,8 +1,5 @@
 .dashboard-container {
-    background-color: #939b62;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 2rem 2rem;
     margin: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -29,7 +26,8 @@
     grid-column: 2 span;
 }
 
-#column-1, #column-2 {
+#column-1,
+#column-2 {
     grid-row: 1 span;
 }
 
@@ -41,6 +39,7 @@
     .dashboard-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0;
+        margin: 2rem 0%;
     }
 
     #dashboard-card-responsive-big {
