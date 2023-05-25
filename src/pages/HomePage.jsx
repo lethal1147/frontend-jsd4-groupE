@@ -208,7 +208,7 @@ export function Homehow() {
 
 export function HomeMeetTeam() {
   return (
-    <section>
+    <section className='home-meet-section'>
       <h2 className='home-section-header'>Meet our Team!</h2>
       <div className='home-meet-card-container'>
         <Swiper
