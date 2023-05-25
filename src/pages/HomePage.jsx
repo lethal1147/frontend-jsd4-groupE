@@ -63,16 +63,16 @@ export default function HomePage() {
       return setBmiInput({...bmiInput, bmi: bmiResult, shape: 'strong'})
     }
 
-    const bmiResult = `Your BMI is : ${(weight / (height / 100) ** 2).toFixed(2)}`;
-    const bmiState =
-      bmiResult < 18.5
-        ? "under"
-        : bmiResult >= 18.5 && bmiResult < 25
-          ? "strong"
-          : bmiResult >= 25 
-          ? "over"
-          : "strong"
-  
+    const bmiResult = parseFloat((weight / (height / 100) ** 2).toFixed(2));
+    const bmiState = 
+      bmiResult < 18.5 
+      ? "under" 
+      : bmiResult >= 18.5 && bmiResult < 25 
+      ? "strong" 
+      : bmiResult >= 25 
+      ? "over" 
+      : "strong"
+
     setBmiInput({ ...bmiInput, bmi: bmiResult, shape: bmiState });
   }
 
@@ -164,7 +164,7 @@ export function Homebmi({ bmiInput, onChange, onClick }) {
             name="weight"
             value={bmiInput.weight}
           />
-          <span>{bmiInput.bmi}</span>
+          <span>{typeof bmiInput.bmi === 'number' ? 'Your BMI is : ' : ''}{bmiInput.bmi}</span>
           <button onClick={onClick}>Calculate</button>
         </form>
       </div>

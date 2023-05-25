@@ -209,20 +209,20 @@ function ReadCard() {
         </div>
 
         <div className="r-card-buttons">
+          {/* back button */}
+          <input
+            type="submit"
+            value="Back to Dashboard"
+            className="r-btn-create"
+            onClick={handleButtonBack}
+          ></input>
+
           {/* submit button */}
           <input
             type="submit"
             value="Create new card"
             className="r-btn-create"
             onClick={handleButton}
-          ></input>
-
-          {/* back button */}
-          <input
-            type="submit"
-            value="Back"
-            className="r-btn-create"
-            onClick={handleButtonBack}
           ></input>
         </div>
 
