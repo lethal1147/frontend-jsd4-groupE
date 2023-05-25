@@ -40,7 +40,7 @@ export default function DashboardBox() {
                 <div className="dashboard-card">
                     <DashboardAchievements />
                 </div>
-                <div className="dashboard-card">
+                <div className="dashboard-card" id="dashboard-cards">
                     <DashboardCards />
                 </div>
             </div>
