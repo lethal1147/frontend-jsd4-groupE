@@ -186,7 +186,7 @@ export function Homebmi({ bmiInput, onChange, onClick }) {
 export function Homehow() {
   return (
     <section id="how" className="how-section">
-      <h2 className="home-section-header">How it Work!</h2>
+      <h2 className="home-section-header">How it Works!</h2>
       <div className="how-card-container">
         {howSectionContent.map((content) => {
           return (
@@ -208,7 +208,7 @@ export function Homehow() {
 
 export function HomeMeetTeam() {
   return (
-    <section>
+    <section className='home-meet-section'>
       <h2 className='home-section-header'>Meet our Team!</h2>
       <div className='home-meet-card-container'>
         <Swiper
@@ -218,8 +218,8 @@ export function HomeMeetTeam() {
             hide: true
           }}
           autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
+            // delay: 3500,
+            // disableOnInteraction: false,
           }}
           loop={true}
         >
