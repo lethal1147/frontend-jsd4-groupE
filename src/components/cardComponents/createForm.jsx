@@ -16,6 +16,7 @@ function Form({
   durationAlert,
   isProcessing,
   handleCancel,
+  errorImg,
 }) {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
 
@@ -240,6 +241,7 @@ function Form({
           Cancel
         </button>
       </div>
+      {/* {errorImg && <div className="error-message">*{errorImg}*</div>} */}
     </form>
   );
 }

@@ -396,3 +396,8 @@ form {
   margin: 0 auto;
   padding-top: 0.1rem;
 }
+
+.error-message {
+  color: red;
+  text-align: center;
+}
