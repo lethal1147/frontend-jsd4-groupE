@@ -4,8 +4,20 @@
     align-items: center;
 }
 
-.dashboard-profile img {
-    width: 10rem;
+.dashboard-profile-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: grey;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.dashboard-profile-image img {
+    width: 8rem;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
@@ -23,7 +35,7 @@
 
 
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .dashboard-profile img {
         width: 7rem;
         margin-right: 5%;
@@ -32,4 +44,4 @@
     .dashboard-profile h3 {
         font-size: 150%;
     }
-}
+} */
