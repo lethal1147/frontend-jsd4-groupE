@@ -115,7 +115,7 @@ const RegisterForm = ({
             onChange={handleChange}
             value={formValues.email}
             name="email"
-            type="email"
+            type="text"
             placeholder="Email"
           />
           <span className="texterr"> {formErrors.email}</span>
