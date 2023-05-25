@@ -8,8 +8,6 @@ import Layout from "../components/Layout";
 import ProfileForm from "../components/ProfileForm";
 import "../assets/styles/ProfilePage.css";
 
-
-
 const Profile = () => {
   const navigate = useNavigate();
 
@@ -18,8 +16,6 @@ const Profile = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-
-
 
   const fetchData = async () => {
     const backend = import.meta.env.VITE_BACKEND_URL;
@@ -118,13 +114,9 @@ const Profile = () => {
     });
   };
 
-
-
   useEffect(() => {
     fetchData();
   }, []);
-
-
 
   return (
     <Layout>
@@ -140,6 +132,6 @@ const Profile = () => {
       />
     </Layout>
   );
-}
+};
 
 export default Profile;
